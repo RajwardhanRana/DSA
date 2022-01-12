@@ -19,5 +19,6 @@ return(rev==n);
 
 int main(){
     
+    
 }
 
