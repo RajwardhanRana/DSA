@@ -3,7 +3,7 @@
 using namespace std;
 #include <bits/stdc++.h>
 
-bool func(int n){
+int func(int n){
 int rev=0;
 int temp =n;
 while(temp!=0){
@@ -11,14 +11,22 @@ while(temp!=0){
     rev=rev*10+ld;
     temp =temp/10;}
 
-return(rev==n);
+return(rev);
 }
 
 
 
 
 int main(){
-    
+    int n;
+    cin>>n;
+    cout<<func(n);
+    if(func(n)==n){
+        cout<<"yes";
+    }
+    else{
+        cout<<"no";
+    }
     
 }
 
