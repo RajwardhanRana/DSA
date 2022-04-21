@@ -10,13 +10,13 @@ class Solution{
 public:
 
 	vector<int> valueEqualToIndex(int arr[], int n) {
-	    // code here
-	    vector<int> t;
-	    for(int i=0; i<n; i++){
-	     if(arr[i]==i+1){
-	      t.push_back(arr[i]);}
+	     vector<int>r;
+	    for(int i=0;i<n;i++){
+	        if(arr[i]==i+1){
+	            r.push_back(arr[i]);
+	        }
 	    }
-	    return t;
+	  return r;
 	}
 };
 
