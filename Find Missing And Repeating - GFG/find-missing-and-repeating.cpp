@@ -7,19 +7,18 @@ using namespace std;
 class Solution{
 public:
     int *findTwoElement(int *arr, int n) {
-        int *ans = new int[2];
    int c[n + 1] = {0};
-   
+   int *r = new int[2];
    for (int i = 0; i < n; i++)
        c[arr[i]]++;
 
    for (int i = 1; i < n + 1; i++)
        if (c[i] == 0)
-           ans[1] = i;
+           r[1] = i;
        else if(c[i] > 1)
-           ans[0] = i;
+           r[0] = i;
            
-   return ans;
+   return r;
     }
 };
 
